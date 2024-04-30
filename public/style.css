@@ -1,0 +1,329 @@
+/* CSS reset STARTS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+.pure-form,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* CSS reset ENDS*/
+
+
+
+
+/* ROOT STARTS */
+:root {
+    /* General background */
+    --background-color1: #6897752b;
+    --background-color2: #e4f4e5f3;
+
+
+    --main-color1: #689775;
+    --main-color2: #90bf9d;
+    --main-color3: #2b6231;
+
+
+
+    --secondary-color1: #eee16e;
+    --secondary-color2: #c5b94d;
+
+    /* For all font */
+    --font-color1: #283434;
+}
+
+/* ROOT ENDS*/
+
+
+
+/* Body CSS STARTS*/
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: rgba(0, 0, 0, 0.971);
+    color: gold;
+    font-size: 18px;
+}
+/* Body CSS ENDS*/
+
+/* PAGE TITLE CONTAINER STARTS*/
+.page-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+}
+
+.page-title-container > * {
+    text-align: center;
+    border: 0px;
+    border-radius: 1rem;
+    outline: none;
+}
+
+.site-name {
+    font-size: 5rem;
+    font-weight: 800;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.site-name:hover {
+    color:#fbf1cf;
+}
+
+.desc {
+    font-size: 1.5rem;
+}
+
+/* PAGE TITLE CONTAINER ENDS */
+
+
+
+
+
+/* NAV STARTS NAV STARTS NAV STARTS NAV STARTS NAV STARTS NAV STARTS NAV STARTS NAV STARTS NAV STARTS NAV STARTS  */
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    margin-inline: auto;
+}
+
+@media (max-width: 900px) {
+    .nav-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    .nav-items {
+        flex-direction: column;
+    }
+}
+    
+    
+    
+}
+.nav-items > * {
+    margin-inline: 30px;
+    margin-block: 1rem;
+    padding: 20px;
+    border-radius: 1rem;
+    border: 1px solid;
+    
+    font-size: 2rem;
+}
+.nav-items > *:hover {
+    cursor: pointer;
+    background-color: darkgreen;
+}
+.nav-items > *:visited {
+    color: inherit;
+}
+/* NAV ENDS NAV ENDS NAV ENDS NAV ENDS NAV ENDS NAV ENDS NAV ENDS NAV ENDS NAV ENDS NAV ENDS NAV ENDS NAV ENDS NAV ENDS  */
+
+.homepage {
+    font-size: 2rem;;
+    margin-inline: auto;
+    max-width: 50%;;
+    text-align: center;
+    margin-top: 3rem;;
+}
+
+
+
+/* NEW MESSAGE CONTAINER STARTS NEW MESSAGE CONTAINER STARTS NEW MESSAGE CONTAINER STARTS NEW MESSAGE CONTAINER STARTS  */
+.pure-form {
+    margin-inline:auto;
+}
+.pure-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pure-form > * {
+    width: 50%;
+    text-align: center;
+    border-radius: 1rem;
+}
+#nimi {
+
+    border-radius: 20px;
+}
+.pure-form > #viesti, #fun-fact {
+    height: 100px;
+    border-radius: 20px;;
+}
+.pure-form > button {
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.custom-restricted-width {
+    /* To limit the menu width to the content of the menu: */
+    display: inline-block;
+    /* Or set the width explicitly: */
+    /* width: 10em; */
+}
+/* NEW MESSAGE CONTAINER ENDS NEW MESSAGE CONTAINER ENDS NEW MESSAGE CONTAINER ENDS NEW MESSAGE CONTAINER ENDS NEW MESSAGE CONTAINER ENDS  */
+
+
+/* GUESTBOOK STARTS GUESTBOOK STARTS GUESTBOOK STARTS GUESTBOOK STARTS GUESTBOOK STARTS GUESTBOOK STARTS  */
+.guestbook-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.guestbook-item {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    margin-block: 1.5rem;
+    margin-inline: auto;
+    border: 10px solid gold;
+    border-radius: 20px;
+    padding: 1rem;;
+    font-size: 1.5rem;;
+}
+.guestbook-item > * {
+    margin-block: 10px;
+}
+.guestbook-item > h2 {
+    font-size: 2rem;
+}
+/* GUESTBOOK ENDS GUESTBOOK ENDS GUESTBOOK ENDS GUESTBOOK ENDS GUESTBOOK ENDS GUESTBOOK ENDS GUESTBOOK ENDS  */

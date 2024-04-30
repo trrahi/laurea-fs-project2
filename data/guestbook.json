@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Vilma",
+    "message": "Hei, mitä kuuluu?",
+    "funFact": "Tykkään katsoa formuloita."
+  },
+  {
+    "name": "Anni",
+    "message": "Moikka, sinulla on hieno sivusto!",
+    "funFact": "En ole koskaan käynyt Tallinnassa."
+  },
+  {
+    "name": "Tuomas",
+    "message": "Jotain",
+    "funFact": "jotain"
+  },
+  {
+    "name": "Eemeli",
+    "message": "jotaoin",
+    "funFact": "jotain"
+  }
+]
